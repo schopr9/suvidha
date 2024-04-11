@@ -52,6 +52,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
+  --mukesh-select: 98, 7, 80; 
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -8162,7 +8163,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--mukesh-select), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -10998,4 +10999,38 @@ header.masthead h1, header.masthead .h1 {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.dg-dark {
+  position: relative;
+  background-image: url('/assets/img/logo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dg-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity (last value) for the faded effect */
+}
+
+.text-white {
+  color: white; /* Text color for better visibility */
+}
+
+.text-logo {
+  color: rgba(48, 184, 187, 1);
 }
