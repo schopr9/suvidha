@@ -11000,6 +11000,16 @@ header.masthead h1, header.masthead .h1 {
   right: 20px;
   z-index: 9999;
 }
+
+.whatsapp-button ul {
+  transform: translate3d(0px, -25px, 0px);
+  background: transparent;
+  border: 0;
+}
+
+.whatsapp-button li {
+  padding-bottom: inherit;
+}
 .social-icons {
   display: flex;
   align-items: center;
